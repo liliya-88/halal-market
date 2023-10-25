@@ -14,29 +14,27 @@ html {
 
 .header_lamb_back {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb-back-meat.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb-back-meat.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .header_lamb_back1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/back-of-lamb-meat2.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/back-of-lamb-meat2.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .header_lamb_back2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb-back-meat7.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb-back-meat7.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .container_gallery {
   width: 100vw;
   height: auto;
   overflow-x: hidden;
+  background-color: #111111;
 }
 
 .flexContainer {
@@ -63,7 +61,8 @@ html {
 .largeImg {
   border: 1px solid #ccc;
   width: 95vw;
-  height: 500px;
+  min-height: 400px;
+  /* max-height: 450px; */
   padding: 2%;
   margin: 0 auto;
   object-fit: cover;
@@ -83,7 +82,9 @@ html {
   display: block;
 }
 
-#thumbs, #thumbs1, #thumbs2 {
+#thumbs,
+#thumbs1,
+#thumbs2 {
   margin: 0 auto;
   padding: 0;
   display: block;
@@ -142,14 +143,13 @@ html {
   margin: 0.5rem auto;
   padding: 0 15px;
   text-shadow: var(--textShadow2);
-
 }
 
 .a_link_button_light {
   color: var(--secondaryColor);
   background: transparent;
   padding: 0.5rem;
-  outline: .3rem outset var(--primaryColor);
+  outline: 0.3rem outset var(--primaryColor);
   box-shadow: 0 0 3px 5px black, 0.5px 0.5px 4px 6px grey;
   display: block;
   text-align: center;
@@ -160,7 +160,7 @@ html {
 .a_link_button_light:hover {
   background: var(--tirtiaryColor);
   color: var(--primaryColor);
-  outline: .3rem outset var(--secondaryColor);
+  outline: 0.3rem outset var(--secondaryColor);
   box-shadow: 0 0 3px 5px grey, 0.5px 0.5px 4px 6px black;
 }
 
@@ -196,13 +196,11 @@ html {
   display: block;
   margin: 0.5rem auto 0;
   padding: 3.5rem 0;
-  text-shadow: 0.9px 0.9px 6px rgb(91, 90, 89),
-    0px 0px 4px rgb(30, 30, 30);
+  text-shadow: 0.9px 0.9px 6px rgb(91, 90, 89), 0px 0px 4px rgb(30, 30, 30);
   color: var(--secondaryColor);
   margin: 0 auto;
   padding: 0.2rem;
   position: relative;
-
 }
 
 h1.h1 {
@@ -216,6 +214,7 @@ h1.h1 {
   width: 100vw;
   height: 95vh;
   height: auto;
+  z-index: -1;
 }
 
 .colHolder.one {
@@ -228,7 +227,7 @@ h1.h1 {
 }
 
 .hr_thumb::before {
-  content: 'Рецепт для приготовления блюда из баранины';
+  content: "Рецепт для приготовления блюда из баранины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -303,43 +302,43 @@ h1.h1 {
     width: 143px;
     height: 100px;
     float: right;
-
   }
 
   #thumbs1 a img {
     width: 143px;
     height: 100px;
     float: right;
-
   }
 
   .a_link_button_light {
     display: block;
     width: fit-content;
-
   }
 
-  #thumbs, #thumbs1 {
+  #thumbs,
+  #thumbs1 {
     margin-left: 3.8rem;
     text-align: center;
   }
 
   .imgHolder img {
-    width: 100%;
+    width: 90%;
+    min-height: 50vh;
+    object-fit: fill;
     margin: 0 auto;
     display: block;
   }
 
   .colHolder {
     max-width: 50vw;
-    align-self: center;
+    align-self: flex-start;
     padding: 0.2rem 1rem;
   }
 }
 
 /* glowing_button */
 button.glow-on-hover {
-  width: 220px;
+  max-width: 220px;
   height: 50px;
   border: none;
   outline: none;
@@ -355,13 +354,21 @@ button.glow-on-hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
-
+  width: 100%;
 }
 
 .glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -372,12 +379,12 @@ button.glow-on-hover {
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .2s cubic-bezier(0, 3.68, 0, -0.63);
+  transition: opacity 0.2s cubic-bezier(0, 3.68, 0, -0.63);
   border-radius: 10px;
 }
 
 .glow-on-hover:active {
-  color: #000
+  color: #000;
 }
 
 .glow-on-hover:active:after {
@@ -390,7 +397,7 @@ button.glow-on-hover {
 
 .glow-on-hover:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -398,6 +405,7 @@ button.glow-on-hover {
   left: 0;
   top: 0;
   border-radius: 10px;
+  border: 1px inset var(--tirtiaryColor);
 }
 
 @keyframes glowing {
@@ -431,8 +439,17 @@ button.glow-on-hover {
 }
 
 .h3Glow:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  content: "";
+  background: linear-gradient(45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -443,13 +460,12 @@ button.glow-on-hover {
   height: calc(100% + 4px);
   animation: glowing1 20s linear infinite;
   opacity: 0.2;
-  transition: opacity .2s cubic-bezier(0, 3.68, 0, -0.63);
+  transition: opacity 0.2s cubic-bezier(0, 3.68, 0, -0.63);
   border-radius: 10px;
 }
 
-
 .h3Glow:active {
-  color: rgb(234, 234, 234)
+  color: rgb(234, 234, 234);
 }
 
 .h3Glow:active:after {
@@ -462,7 +478,7 @@ button.glow-on-hover {
 
 .h3Glow:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -507,23 +523,20 @@ beef tenderloin meat page
 */
 .header_beef_tenderloin {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-tenderloin-meat.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-tenderloin-meat.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .header_beef_tenderloin1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-tenderloin-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-tenderloin-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .header_beef_tenderloin2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages//beef-tenderloin-meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages//beef-tenderloin-meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_beef_tenderloin {
@@ -532,7 +545,7 @@ beef tenderloin meat page
 }
 
 .hr_thumb_beef_tenderloin::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -542,7 +555,6 @@ beef tenderloin meat page
   margin: 0 auto;
   animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
   text-shadow: var(--textShadow2);
-
 }
 
 /* ==============
@@ -555,23 +567,20 @@ veal pulp meat page
 */
 .veal_pulp_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-knuckle-whole-meat.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-knuckle-whole-meat.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_pulp_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal-pulp-meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal-pulp-meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_pulp_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal-pulp-meat3.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal-pulp-meat3.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_veal_pulp_meat {
@@ -580,7 +589,7 @@ veal pulp meat page
 }
 
 .hr_thumb_veal_pulp_meat::before {
-  content: 'Рецепт для приготовления блюда из телятины';
+  content: "Рецепт для приготовления блюда из телятины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -602,23 +611,20 @@ front-leg-of-lamb-halal-meat page
 */
 .front-leg-of-lamb-halal-meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/front-leg-lamb-meat1.jpeg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/front-leg-lamb-meat1.jpeg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .front-leg-of-lamb-halal-meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/front-leg-lamb-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/front-leg-lamb-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .front-leg-of-lamb-halal-meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/front-leg-of-lamb-meat.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/front-leg-of-lamb-meat.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_front-leg-of-lamb-halal-meat {
@@ -627,7 +633,7 @@ front-leg-of-lamb-halal-meat page
 }
 
 .hr_thumb_front-leg-of-lamb-halal-meat::before {
-  content: 'Рецепт для приготовления блюда из баранины';
+  content: "Рецепт для приготовления блюда из баранины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -649,23 +655,20 @@ beef_steak-meat-halal
 */
 .beef_steak-meat-halal {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/cuts-of-beef-meat.png) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/cuts-of-beef-meat.png) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_steak-meat-halal1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-steak-meat-halal.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-steak-meat-halal.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_steak-meat-halal2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-steak-meat-halal1.jpeg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-steak-meat-halal1.jpeg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_beef_steak-meat-halal {
@@ -674,7 +677,7 @@ beef_steak-meat-halal
 }
 
 .hr_thumb_beef_steak-meat-halal::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -696,23 +699,20 @@ kurduyuk lamb meat page
 */
 .kurdyuk_lamb_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/kurdyuk-lamb-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/kurdyuk-lamb-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .kurdyuk_lamb_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/kurdyuk-lamb-meat-halal1.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/kurdyuk-lamb-meat-halal1.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .kurdyuk_lamb_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/lamb_fat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/lamb_fat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_kurdyuk_lamb_meat {
@@ -721,7 +721,7 @@ kurduyuk lamb meat page
 }
 
 .hr_thumb_kurdyuk_lamb_meat::before {
-  content: 'Рецепт для приготовления блюда из баранины';
+  content: "Рецепт для приготовления блюда из баранины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -743,23 +743,20 @@ beef heart meat page
 */
 .beef_heart_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-heart-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-heart-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_heart_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-heart-meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-heart-meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_heart_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/beef_heart.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/beef_heart.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_beef_heart_meat {
@@ -768,7 +765,7 @@ beef heart meat page
 }
 
 .hr_thumb_beef_heart_meat::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -790,23 +787,20 @@ veal_steak_meat page
 */
 .veal_steak_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal-steak-halal-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal-steak-halal-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_steak_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal-steak-halal-meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal-steak-halal-meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_steak_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal-steak-meat4.jpeg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal-steak-meat4.jpeg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_veal_steak_meat {
@@ -815,7 +809,7 @@ veal_steak_meat page
 }
 
 .hr_thumb_veal_steak_meat::before {
-  content: 'Рецепт для приготовления блюда из телятины';
+  content: "Рецепт для приготовления блюда из телятины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -837,23 +831,20 @@ ground_beef_meat page
 */
 .ground_beef_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/ground-beef-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/ground-beef-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .ground_beef_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/ground-beef-meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/ground-beef-meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .ground_beef_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/ground-beef_wqobpz.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/ground-beef_wqobpz.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_ground_beef_meat {
@@ -862,7 +853,7 @@ ground_beef_meat page
 }
 
 .hr_thumb_ground_beef_meat::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -884,23 +875,20 @@ beef_liver_meat page
 */
 .beef_liver_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/liver-beef-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/liver-beef-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_liver_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-liver-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-liver-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_liver_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/liver_beef.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/liver_beef.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_beef_liver_meat {
@@ -909,7 +897,7 @@ beef_liver_meat page
 }
 
 .hr_thumb_beef_liver_meat::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -931,23 +919,20 @@ chicken_halal_meat page
 */
 .chicken_halal_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/chicken-homemade-meat.jfif) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/chicken-homemade-meat.jfif) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .chicken_halal_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/chiken_from_farm_meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/chiken_from_farm_meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .chicken_halal_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/chicken-homemade-halal-meat.jpeg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/chicken-homemade-halal-meat.jpeg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_chicken_halal_meat {
@@ -956,7 +941,7 @@ chicken_halal_meat page
 }
 
 .hr_thumb_chicken_halal_meat::before {
-  content: 'Рецепт для приготовления блюда из курицы';
+  content: "Рецепт для приготовления блюда из курицы";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -978,23 +963,20 @@ beef_tongue_meat page
 */
 .beef_tongue_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-tongue-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-tongue-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_tongue_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-tongue-meat.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-tongue-meat.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_tongue_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/beef_tonge_meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/beef_tonge_meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_beef_tongue_meat {
@@ -1003,7 +985,7 @@ beef_tongue_meat page
 }
 
 .hr_thumb_beef_tongue_meat::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1025,23 +1007,20 @@ rear_lamb_leg_meat page
 */
 .rear_lamb_leg_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/back-leg-of-lamb-meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/back-leg-of-lamb-meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .rear_lamb_leg_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/back-leg-of-lamb-meat3.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/back-leg-of-lamb-meat3.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .rear_lamb_leg_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/back-leg-lamb-meat1.jpeg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/back-leg-lamb-meat1.jpeg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_rear_lamb_leg_meat {
@@ -1050,7 +1029,7 @@ rear_lamb_leg_meat page
 }
 
 .hr_thumb_rear_lamb_leg_meat::before {
-  content: 'Рецепт для приготовления блюда из баранины';
+  content: "Рецепт для приготовления блюда из баранины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1072,23 +1051,20 @@ beef_goulash-halal_meat page
 */
 .beef_goulash-halal_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/sauteed-veal-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/sauteed-veal-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_goulash-halal_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal-goulyash-meat.jpeg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal-goulyash-meat.jpeg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_goulash-halal_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/lean-beef_meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/lean-beef_meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_beef_goulash-halal_meat {
@@ -1097,7 +1073,7 @@ beef_goulash-halal_meat page
 }
 
 .hr_thumb_beef_goulash-halal_meat::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1119,23 +1095,20 @@ beef_knuckle_meatpage
 */
 .beef_knuckle_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-knuckle-meat.jpeg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-knuckle-meat.jpeg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_knuckle_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-knuckle-halal-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-knuckle-halal-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_knuckle_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-knuckle-halal-meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef-knuckle-halal-meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_beef_knuckle_meat {
@@ -1144,7 +1117,7 @@ beef_knuckle_meatpage
 }
 
 .hr_thumb_beef_knuckle_meat::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1166,23 +1139,20 @@ rabbit_halal_meat page
 */
 .rabbit_halal_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/rabbit-meat.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/rabbit-meat.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .rabbit_halal_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/rabbit-meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/rabbit-meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .rabbit_halal_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/rabbit-meat_pxotrn.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/rabbit-meat_pxotrn.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_rabbit_halal_meat {
@@ -1191,7 +1161,7 @@ rabbit_halal_meat page
 }
 
 .hr_thumb_rabbit_halal_meat::before {
-  content: 'Рецепт для приготовления блюда из кролика';
+  content: "Рецепт для приготовления блюда из кролика";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1213,23 +1183,20 @@ beef_steak_meat page
 */
 .beef_steak_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/steak_beef_halal_meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/steak_beef_halal_meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_steak_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/steak_beef_halal_meat3.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/steak_beef_halal_meat3.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_steak_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/steak_beef_halal_meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/steak_beef_halal_meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_beef_steak_meat {
@@ -1238,7 +1205,7 @@ beef_steak_meat page
 }
 
 .hr_thumb_beef_steak_meat::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1260,23 +1227,20 @@ rabbit_halal_meat page
 */
 .rabbit_halal_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/rabbit-meat.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/rabbit-meat.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .rabbit_halal_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/rabbit-meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/rabbit-meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .rabbit_halal_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/rabbit-meat_pxotrn.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/rabbit-meat_pxotrn.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_rabbit_halal_meat {
@@ -1285,7 +1249,7 @@ rabbit_halal_meat page
 }
 
 .hr_thumb_rabbit_halal_meat::before {
-  content: 'Рецепт для приготовления блюда из кролика';
+  content: "Рецепт для приготовления блюда из кролика";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1307,23 +1271,20 @@ lamb-pulp-on-the-bone-meat page
 */
 .lamb-pulp-on-the-bone-meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .lamb-pulp-on-the-bone-meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .lamb-pulp-on-the-bone-meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat3.jpeg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat3.jpeg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_lamb-pulp-on-the-bone-meat {
@@ -1332,7 +1293,7 @@ lamb-pulp-on-the-bone-meat page
 }
 
 .hr_thumb_lamb-pulp-on-the-bone-meat::before {
-  content: 'Рецепт для приготовления блюда из баранины';
+  content: "Рецепт для приготовления блюда из баранины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1354,23 +1315,20 @@ veal_knuckle_meat page
 */
 .veal_knuckle_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_knuckle_meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_knuckle_meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_knuckle_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_knuckle_meat.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_knuckle_meat.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_knuckle_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_knuckle_meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_knuckle_meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_veal_knuckle_meat {
@@ -1379,7 +1337,7 @@ veal_knuckle_meat page
 }
 
 .hr_thumb_veal_knuckle_meat::before {
-  content: 'Рецепт для приготовления блюда из телятины';
+  content: "Рецепт для приготовления блюда из телятины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1399,25 +1357,49 @@ end of veal_knuckle_meat page
 beef_pulp_meat page
 ================
 */
+/* testing */
+.overlay_dark {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  z-index: inherit;
+}
+
+.overlay_dark::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: relative;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+}
+
+/* end of testing */
+
 .beef_pulp_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef-pulp-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  /* background:
+     (../images/img_meat_pages/beef-pulp-meat.jpg) center/cover no-repeat; */
+  background: url(../images/img_meat_pages/beef-pulp-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_pulp_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal-pulp-meat3.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal-pulp-meat3.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_pulp_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/raw-pulp-beef-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/meat-products/beef-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_beef_pulp_meat {
@@ -1426,7 +1408,7 @@ beef_pulp_meat page
 }
 
 .hr_thumb_beef_pulp_meat::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1448,23 +1430,20 @@ lamb_pulp_meat page
 */
 .lamb_pulp_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb_pulp_meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb_pulp_meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .lamb_pulp_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb_pulp_meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb_pulp_meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .lamb_pulp_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb_pulp_meat1.jpeg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb_pulp_meat1.jpeg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_lamb_pulp_meat {
@@ -1473,7 +1452,7 @@ lamb_pulp_meat page
 }
 
 .hr_thumb_lamb_pulp_meat::before {
-  content: 'Рецепт для приготовления блюда из баранины';
+  content: "Рецепт для приготовления блюда из баранины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1495,23 +1474,20 @@ brisket_beef_meat page
 */
 .brisket_beef_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/brisket_beef_meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/brisket_beef_meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .brisket_beef_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/brisket_beef_meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/brisket_beef_meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .brisket_beef_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/brisket_beef_meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/brisket_beef_meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_brisket_beef_meat {
@@ -1520,7 +1496,7 @@ brisket_beef_meat page
 }
 
 .hr_thumb_brisket_beef_meat::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1542,23 +1518,20 @@ minced_lamb_with_beef_meat page
 */
 .minced_lamb_with_beef_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb-mince-meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb-mince-meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .minced_lamb_with_beef_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb-mince-meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb-mince-meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .minced_lamb_with_beef_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb-mince-meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb-mince-meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_minced_lamb_with_beef_meat {
@@ -1567,7 +1540,7 @@ minced_lamb_with_beef_meat page
 }
 
 .hr_thumb_minced_lamb_with_beef_meat::before {
-  content: 'Рецепт для приготовления блюда из баранины';
+  content: "Рецепт для приготовления блюда из баранины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1589,23 +1562,20 @@ beef_ribs_meat page
 */
 .beef_ribs_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef_ribs_meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef_ribs_meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_ribs_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef_ribs_meat2.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef_ribs_meat2.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .beef_ribs_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/beef_ribs_meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/beef_ribs_meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_beef_ribs_meat {
@@ -1614,7 +1584,7 @@ beef_ribs_meat page
 }
 
 .hr_thumb_beef_ribs_meat::before {
-  content: 'Рецепт для приготовления блюда из говядины';
+  content: "Рецепт для приготовления блюда из говядины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1636,23 +1606,20 @@ veal_shoulder_meat page
 */
 .veal_shoulder_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_shoulder_meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_shoulder_meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_shoulder_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_shoulder_meat1.png) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_shoulder_meat1.png) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_shoulder_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_shoulder_meat2.png) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_shoulder_meat2.png) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_veal_shoulder_meat {
@@ -1661,7 +1628,7 @@ veal_shoulder_meat page
 }
 
 .hr_thumb_veal_shoulder_meat::before {
-  content: 'Рецепт для приготовления блюда из телятины';
+  content: "Рецепт для приготовления блюда из телятины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1683,23 +1650,20 @@ veal_steak_boneless_meat page
 */
 .veal_steak_boneless_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_steak_boneless_meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_steak_boneless_meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_steak_boneless_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_steak_boneless_meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_steak_boneless_meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_steak_boneless_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_steak_boneless_meat.jpeg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_steak_boneless_meat.jpeg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_veal_steak_boneless_meat {
@@ -1708,7 +1672,7 @@ veal_steak_boneless_meat page
 }
 
 .hr_thumb_veal_steak_boneless_meat::before {
-  content: 'Рецепт для приготовления блюда из телятины';
+  content: "Рецепт для приготовления блюда из телятины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1730,23 +1694,20 @@ veal_ribs_meat page
 */
 .veal_ribs_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_ribs_meat.webp) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_ribs_meat.webp) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_ribs_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_ribs_meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_ribs_meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .veal_ribs_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/veal_ribs_meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/veal_ribs_meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_veal_ribs_meat {
@@ -1755,7 +1716,7 @@ veal_ribs_meat page
 }
 
 .hr_thumb_veal_ribs_meat::before {
-  content: 'Рецепт для приготовления блюда из телятины';
+  content: "Рецепт для приготовления блюда из телятины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
@@ -1777,23 +1738,20 @@ lamb_loin_meat page
 */
 .lamb_loin_meat {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb_loin_meat.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb_loin_meat.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .lamb_loin_meat1 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb_loin_meat1.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb_loin_meat1.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .lamb_loin_meat2 {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
-    url(../images/img_meat_pages/lamb_loin_meat2.jpg) center/cover no-repeat;
-  transition: background 2s cubic-bezier(0, 3.68, 0, -0.63);
+  background: url(../images/img_meat_pages/lamb_loin_meat2.jpg) center/cover no-repeat;
+  transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hr_thumb_lamb_loin_meat {
@@ -1802,7 +1760,7 @@ lamb_loin_meat page
 }
 
 .hr_thumb_lamb_loin_meat::before {
-  content: 'Рецепт для приготовления блюда из баранины';
+  content: "Рецепт для приготовления блюда из баранины";
   text-align: center;
   text-transform: uppercase;
   color: var(--whiteLess);
