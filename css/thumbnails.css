@@ -14,20 +14,26 @@ html {
 
 .header_lamb_back {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb-back-meat.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb-back-meat.webp) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .header_lamb_back1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/back-of-lamb-meat2.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/back-of-lamb-meat2.webp) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .header_lamb_back2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb-back-meat7.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb-back-meat7.webp) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .container_gallery {
@@ -208,7 +214,8 @@ h1.h1 {
 }
 
 .bg_custom_gallery1 {
-  background: rgba(14, 14, 14, 0.9) url("../images/sunrays-background.jpg") center/cover no-repeat fixed;
+  background: rgba(14, 14, 14, 0.9) url("../images/sunrays-background.jpg")
+    center/cover no-repeat fixed;
   background-blend-mode: overlay;
   margin: 0 auto;
   width: 100vw;
@@ -235,7 +242,8 @@ h1.h1 {
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -248,7 +256,7 @@ h1.h1 {
   width: 50vw;
 }
 
-.a_link_button_light1>button {
+.a_link_button_light1 > button {
   text-transform: uppercase;
   text-shadow: var(--textShadow2);
   color: var(--tirtiaryColor);
@@ -359,16 +367,18 @@ button.glow-on-hover {
 
 .glow-on-hover:before {
   content: "";
-  background: linear-gradient(45deg,
-      #ff0000,
-      #ff7300,
-      #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
   left: -2px;
@@ -440,16 +450,18 @@ button.glow-on-hover {
 
 .h3Glow:before {
   content: "";
-  background: linear-gradient(45deg,
-      #ff0000,
-      #ff7300,
-      #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000);
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
   position: absolute;
   top: -2px;
   left: -2px;
@@ -523,20 +535,26 @@ beef tenderloin meat page
 */
 .header_beef_tenderloin {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-tenderloin-meat.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-tenderloin-meat.webp)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .header_beef_tenderloin1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-tenderloin-meat.jpg) center/cover no-repeat;
+  background: url(../images/meat-products/tenderlion-beef.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .header_beef_tenderloin2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages//beef-tenderloin-meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages//beef-tenderloin-meat1.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_beef_tenderloin {
@@ -553,7 +571,8 @@ beef tenderloin meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -567,20 +586,26 @@ veal pulp meat page
 */
 .veal_pulp_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-knuckle-whole-meat.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-knuckle-whole-meat.webp)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_pulp_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal-pulp-meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal-pulp-meat2.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_pulp_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal-pulp-meat3.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal-pulp-meat3.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_veal_pulp_meat {
@@ -597,7 +622,8 @@ veal pulp meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -611,20 +637,26 @@ front-leg-of-lamb-halal-meat page
 */
 .front-leg-of-lamb-halal-meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/front-leg-lamb-meat1.jpeg) center/cover no-repeat;
+  background: url(../images/meat-products/lamb-front-leg-meat.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .front-leg-of-lamb-halal-meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/front-leg-lamb-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/front-leg-lamb-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .front-leg-of-lamb-halal-meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/front-leg-of-lamb-meat.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/front-leg-of-lamb-meat.webp)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_front-leg-of-lamb-halal-meat {
@@ -641,7 +673,8 @@ front-leg-of-lamb-halal-meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -655,20 +688,26 @@ beef_steak-meat-halal
 */
 .beef_steak-meat-halal {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/cuts-of-beef-meat.png) center/cover no-repeat;
+  background: url(../images/img_meat_pages/cuts-of-beef-meat.png) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_steak-meat-halal1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-steak-meat-halal.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-steak-meat-halal.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_steak-meat-halal2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-steak-meat-halal1.jpeg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-steak-meat-halal1.jpeg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_beef_steak-meat-halal {
@@ -685,7 +724,8 @@ beef_steak-meat-halal
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -699,20 +739,25 @@ kurduyuk lamb meat page
 */
 .kurdyuk_lamb_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/kurdyuk-lamb-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/kurdyuk-lamb-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .kurdyuk_lamb_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/kurdyuk-lamb-meat-halal1.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/kurdyuk-lamb-meat-halal1.webp)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .kurdyuk_lamb_meat2 {
   min-height: 100vh;
   background: url(../images/lamb_fat.jpg) center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_kurdyuk_lamb_meat {
@@ -729,7 +774,8 @@ kurduyuk lamb meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -743,20 +789,25 @@ beef heart meat page
 */
 .beef_heart_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-heart-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-heart-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_heart_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-heart-meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-heart-meat1.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_heart_meat2 {
   min-height: 100vh;
   background: url(../images/beef_heart.jpg) center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_beef_heart_meat {
@@ -773,7 +824,8 @@ beef heart meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -787,20 +839,26 @@ veal_steak_meat page
 */
 .veal_steak_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal-steak-halal-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal-steak-halal-meat.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_steak_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal-steak-halal-meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal-steak-halal-meat1.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_steak_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal-steak-meat4.jpeg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal-steak-meat4.jpeg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_veal_steak_meat {
@@ -817,7 +875,8 @@ veal_steak_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -831,20 +890,25 @@ ground_beef_meat page
 */
 .ground_beef_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/ground-beef-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/ground-beef-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .ground_beef_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/ground-beef-meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/ground-beef-meat1.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .ground_beef_meat2 {
   min-height: 100vh;
   background: url(../images/ground-beef_wqobpz.jpg) center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_ground_beef_meat {
@@ -861,7 +925,8 @@ ground_beef_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -875,20 +940,25 @@ beef_liver_meat page
 */
 .beef_liver_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/liver-beef-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/liver-beef-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_liver_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-liver-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-liver-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_liver_meat2 {
   min-height: 100vh;
   background: url(../images/liver_beef.jpg) center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_beef_liver_meat {
@@ -905,7 +975,8 @@ beef_liver_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -919,20 +990,25 @@ chicken_halal_meat page
 */
 .chicken_halal_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/chicken-homemade-meat.jfif) center/cover no-repeat;
+  background: url(../images/img_meat_pages/chicken-homemade-meat.jfif)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .chicken_halal_meat1 {
   min-height: 100vh;
   background: url(../images/chiken_from_farm_meat.jpg) center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .chicken_halal_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/chicken-homemade-halal-meat.jpeg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/chicken-homemade-halal-meat.jpeg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_chicken_halal_meat {
@@ -949,7 +1025,8 @@ chicken_halal_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -963,20 +1040,25 @@ beef_tongue_meat page
 */
 .beef_tongue_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-tongue-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-tongue-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_tongue_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-tongue-meat.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-tongue-meat.webp) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_tongue_meat2 {
   min-height: 100vh;
   background: url(../images/beef_tonge_meat.jpg) center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_beef_tongue_meat {
@@ -993,7 +1075,8 @@ beef_tongue_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1007,20 +1090,26 @@ rear_lamb_leg_meat page
 */
 .rear_lamb_leg_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/back-leg-of-lamb-meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/back-leg-of-lamb-meat2.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .rear_lamb_leg_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/back-leg-of-lamb-meat3.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/back-leg-of-lamb-meat3.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .rear_lamb_leg_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/back-leg-lamb-meat1.jpeg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/back-leg-lamb-meat1.jpeg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_rear_lamb_leg_meat {
@@ -1037,7 +1126,8 @@ rear_lamb_leg_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1051,20 +1141,25 @@ beef_goulash-halal_meat page
 */
 .beef_goulash-halal_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/sauteed-veal-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/sauteed-veal-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_goulash-halal_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal-goulyash-meat.jpeg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal-goulyash-meat.jpeg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_goulash-halal_meat2 {
   min-height: 100vh;
   background: url(../images/lean-beef_meat.jpg) center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_beef_goulash-halal_meat {
@@ -1081,7 +1176,8 @@ beef_goulash-halal_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1095,20 +1191,26 @@ beef_knuckle_meatpage
 */
 .beef_knuckle_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-knuckle-meat.jpeg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-knuckle-meat.jpeg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_knuckle_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-knuckle-halal-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-knuckle-halal-meat.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_knuckle_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef-knuckle-halal-meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-knuckle-halal-meat1.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_beef_knuckle_meat {
@@ -1125,7 +1227,8 @@ beef_knuckle_meatpage
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1139,20 +1242,25 @@ rabbit_halal_meat page
 */
 .rabbit_halal_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/rabbit-meat.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/rabbit-meat.webp) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .rabbit_halal_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/rabbit-meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/rabbit-meat2.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .rabbit_halal_meat2 {
   min-height: 100vh;
   background: url(../images/rabbit-meat_pxotrn.jpg) center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_rabbit_halal_meat {
@@ -1169,7 +1277,8 @@ rabbit_halal_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1183,20 +1292,26 @@ beef_steak_meat page
 */
 .beef_steak_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/steak_beef_halal_meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/steak_beef_halal_meat1.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_steak_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/steak_beef_halal_meat3.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/steak_beef_halal_meat3.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_steak_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/steak_beef_halal_meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/steak_beef_halal_meat2.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_beef_steak_meat {
@@ -1213,7 +1328,8 @@ beef_steak_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1227,20 +1343,25 @@ rabbit_halal_meat page
 */
 .rabbit_halal_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/rabbit-meat.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/rabbit-meat.webp) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .rabbit_halal_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/rabbit-meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/rabbit-meat2.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .rabbit_halal_meat2 {
   min-height: 100vh;
   background: url(../images/rabbit-meat_pxotrn.jpg) center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_rabbit_halal_meat {
@@ -1257,7 +1378,8 @@ rabbit_halal_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1271,20 +1393,26 @@ lamb-pulp-on-the-bone-meat page
 */
 .lamb-pulp-on-the-bone-meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .lamb-pulp-on-the-bone-meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat1.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .lamb-pulp-on-the-bone-meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat3.jpeg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb-pulp-on-the-bone-meat3.jpeg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_lamb-pulp-on-the-bone-meat {
@@ -1301,7 +1429,8 @@ lamb-pulp-on-the-bone-meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1315,20 +1444,26 @@ veal_knuckle_meat page
 */
 .veal_knuckle_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_knuckle_meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_knuckle_meat2.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_knuckle_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_knuckle_meat.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_knuckle_meat.webp) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_knuckle_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_knuckle_meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_knuckle_meat2.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_veal_knuckle_meat {
@@ -1345,7 +1480,8 @@ veal_knuckle_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1386,20 +1522,25 @@ beef_pulp_meat page
   min-height: 100vh;
   /* background:
      (../images/img_meat_pages/beef-pulp-meat.jpg) center/cover no-repeat; */
-  background: url(../images/img_meat_pages/beef-pulp-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef-pulp-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_pulp_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal-pulp-meat3.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal-pulp-meat3.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_pulp_meat2 {
   min-height: 100vh;
   background: url(../images/meat-products/beef-meat.jpg) center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_beef_pulp_meat {
@@ -1416,7 +1557,8 @@ beef_pulp_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1430,20 +1572,26 @@ lamb_pulp_meat page
 */
 .lamb_pulp_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb_pulp_meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb_pulp_meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .lamb_pulp_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb_pulp_meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb_pulp_meat2.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .lamb_pulp_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb_pulp_meat1.jpeg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb_pulp_meat1.jpeg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_lamb_pulp_meat {
@@ -1460,7 +1608,8 @@ lamb_pulp_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1474,20 +1623,26 @@ brisket_beef_meat page
 */
 .brisket_beef_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/brisket_beef_meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/brisket_beef_meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .brisket_beef_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/brisket_beef_meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/brisket_beef_meat2.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .brisket_beef_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/brisket_beef_meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/brisket_beef_meat1.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_brisket_beef_meat {
@@ -1504,7 +1659,8 @@ brisket_beef_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1518,20 +1674,26 @@ minced_lamb_with_beef_meat page
 */
 .minced_lamb_with_beef_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb-mince-meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb-mince-meat2.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .minced_lamb_with_beef_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb-mince-meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb-mince-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .minced_lamb_with_beef_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb-mince-meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb-mince-meat1.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_minced_lamb_with_beef_meat {
@@ -1548,7 +1710,8 @@ minced_lamb_with_beef_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1562,20 +1725,26 @@ beef_ribs_meat page
 */
 .beef_ribs_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef_ribs_meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef_ribs_meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_ribs_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef_ribs_meat2.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef_ribs_meat2.webp) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .beef_ribs_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/beef_ribs_meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/beef_ribs_meat1.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_beef_ribs_meat {
@@ -1592,7 +1761,8 @@ beef_ribs_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1606,20 +1776,26 @@ veal_shoulder_meat page
 */
 .veal_shoulder_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_shoulder_meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_shoulder_meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_shoulder_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_shoulder_meat1.png) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_shoulder_meat1.png) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_shoulder_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_shoulder_meat2.png) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_shoulder_meat2.png) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_veal_shoulder_meat {
@@ -1636,7 +1812,8 @@ veal_shoulder_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1650,20 +1827,26 @@ veal_steak_boneless_meat page
 */
 .veal_steak_boneless_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_steak_boneless_meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_steak_boneless_meat.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_steak_boneless_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_steak_boneless_meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_steak_boneless_meat1.jpg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_steak_boneless_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_steak_boneless_meat.jpeg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_steak_boneless_meat.jpeg)
+    center/cover no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_veal_steak_boneless_meat {
@@ -1680,7 +1863,8 @@ veal_steak_boneless_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1694,20 +1878,26 @@ veal_ribs_meat page
 */
 .veal_ribs_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_ribs_meat.webp) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_ribs_meat.webp) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_ribs_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_ribs_meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_ribs_meat1.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .veal_ribs_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/veal_ribs_meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/veal_ribs_meat2.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_veal_ribs_meat {
@@ -1724,7 +1914,8 @@ veal_ribs_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1738,20 +1929,26 @@ lamb_loin_meat page
 */
 .lamb_loin_meat {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb_loin_meat.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb_loin_meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .lamb_loin_meat1 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb_loin_meat1.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb_loin_meat1.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .lamb_loin_meat2 {
   min-height: 100vh;
-  background: url(../images/img_meat_pages/lamb_loin_meat2.jpg) center/cover no-repeat;
+  background: url(../images/img_meat_pages/lamb_loin_meat2.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-blend-mode: overlay;
 }
 
 .hr_thumb_lamb_loin_meat {
@@ -1768,7 +1965,8 @@ lamb_loin_meat page
   font-size: 140%;
   display: block;
   margin: 0 auto;
-  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite alternate;
+  animation: fadeInImage 5s cubic-bezier(0.47, 0, 0.745, 0.715) infinite
+    alternate;
   text-shadow: var(--textShadow2);
 }
 
@@ -1778,7 +1976,8 @@ end of lamb_loin_meat page
 */
 /* flash in effect */
 .flashIn {
-  animation: flashIn 0.6s forwards 1 cubic-bezier(0.47, 0, 0.745, 0.715) alternate;
+  animation: flashIn 0.6s forwards 1 cubic-bezier(0.47, 0, 0.745, 0.715)
+    alternate;
 }
 
 @keyframes flashIn {

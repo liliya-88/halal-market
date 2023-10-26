@@ -384,15 +384,15 @@ img:not(.logo) {
   padding: 0.8rem;
   text-overflow: ellipsis;
   text-indent: 2rem;
-  filter: var(--filter-with-light-redding);
   text-align: justify;
   word-wrap: break-word;
   border-radius: 10%;
-  font-size: 105%;
+  font-size: 108%;
   /* background-color: rgba(255, 255, 255, 0.05); */
-  text-shadow: var(--textShadowTitle2);
+  filter: var(--filter-with-light-redding);
   filter: var(--filter-white);
-  backdrop-filter: blur(2px);
+  text-shadow: var(--textShadowTitle2);
+  backdrop-filter: blur(1.2px);
 }
 
 .text_light {
@@ -430,6 +430,20 @@ img:not(.logo) {
   margin: 0 auto;
 }
 
+/* intersention observer */
+.fade-up {
+  opacity: 0;
+  position: relative;
+  transform: translateY(5rem);
+  transition: transform 1s cubic-bezier(0.64, 0.04, 0.26, 0.87),
+    opacity 0.8s cubic-bezier(0.64, 0.04, 0.26, 0.87);
+}
+
+.fade-up.faded {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* end of intersention observer */
 /* end of testing */
 /* end of text */
 .h1 {
@@ -1391,8 +1405,8 @@ Reviews
 
 .img_mainPage:hover {
   opacity: 1;
-  transition: all 1s linear;
-  animation: myAnim 1s 1 linear normal forwards;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  animation: myAnim 0.8s cubic-bezier(0.19, 1, 0.22, 1) normal forwards;
   border: 4px solid var(--white);
   box-shadow: var(--box-shadow);
   max-width: 100%;
@@ -1410,7 +1424,7 @@ Reviews
   100% {
     background-position: center top;
     background-size: 100%;
-    transform: scale(1.3);
+    transform: scale(1.2);
   }
 }
 
