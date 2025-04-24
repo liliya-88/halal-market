@@ -432,6 +432,7 @@ img:not(.logo) {
 
 /* intersention observer */
 .fade-up {
+  opacity: 1;
   /* opacity: 0; */
   position: relative;
   transform: translateY(5rem);
@@ -452,7 +453,7 @@ img:not(.logo) {
 }
 
 .h2 {
-  padding-top: 4rem;
+  padding-top:4rem;
   color: var(--whiteSilver);
   text-shadow: var(--textShadowTitle);
 
@@ -770,7 +771,7 @@ header {
 }
 
 header#home.header_privacy {
-  min-height: 4vh;
+  min-height: 12vh;
   background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)) center/cover no-repeat;
   object-fit: contain;
 }
@@ -1505,6 +1506,10 @@ Reviews
   width: 100vw;
 
 }
+.h1{
+
+  padding: 4rem 0rem 0rem;
+}
 
 .h1.privacy::after {
   content: "Политика конфиденциальности";
@@ -1512,6 +1517,7 @@ Reviews
   display: block;
   padding: 1rem 0.3rem 0.3rem;
   margin: 0 auto;
+ 
 
 }
 
