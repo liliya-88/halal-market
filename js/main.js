@@ -223,7 +223,7 @@ const menu = [
     img: "./images/veal-meat-steak-on-bone.jpg",
     desc: `Стейк говяжий — один из самых популярных стейков. Благодаря натуральному жиру и густой мраморности он идеален, для приготовления "в собственном соку", что делает его очень нежным.`,
     scale: "img_mainPage",
-    page: "veal-steak-meat-halal.html",
+    page: "https://halal-market.netlify.app/veal-steak-meat-halal.html",
   },
   {
     id: 10,
@@ -243,7 +243,7 @@ const menu = [
     img: "./images/rabbit-meat_pxotrn.jpg",
     desc: `Кролик домашний - мясо кроликов из деревни на заказ. Диетическое мясо. Изысканное блюдо для всей семьи.`,
     scale: "img_mainPage",
-    page: "rabbit-fresh-meat-halal.html",
+    page: "https://halal-market.netlify.app/rabbit-fresh-meat-halal.html",
   },
   {
     id: 12,
