@@ -433,7 +433,6 @@ img:not(.logo) {
 /* intersention observer */
 .fade-up {
   opacity: 1;
-  /* opacity: 0; */
   position: relative;
   transform: translateY(5rem);
   transition: transform 1s cubic-bezier(0.64, 0.04, 0.26, 0.87),
@@ -442,6 +441,7 @@ img:not(.logo) {
 
 .fade-up.faded {
   opacity: 1;
+
   transform: translateY(0);
 }
 /* end of intersention observer */
@@ -1507,8 +1507,8 @@ Reviews
 
 }
 .h1{
+filter: drop-shadow(0.8px 0.8px 1px var(--whiteMain)) invert(5%);
 
-  padding: 4rem 0rem 0rem;
 }
 
 .h1.privacy::after {
