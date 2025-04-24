@@ -251,7 +251,7 @@ const menu = [
     category: "курица",
     price: 280,
     img: "./images/meat-chicken.jpg",
-    desc: `Куры домашние - тушка курицы из деревни на заказ. Диетическое мясо.  Нежнейший вкус.С высоким содержанием белка `,
+    desc: `Куры фермерские - тушка курицы из деревни на заказ. Диетическое мясо.  Нежнейший вкус.С высоким содержанием белка `,
     scale: "img_mainPage",
     page: "https://halal-market.netlify.app/chicken-meat-halal-in-pokrov.html",
   },
