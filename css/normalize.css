@@ -1,12 +1,13 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 body {
   margin: 0;
+  overflow-y: hidden;
 }
 
 main {
@@ -155,7 +156,6 @@ textarea {
   -webkit: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
-
 
 [type="search"]::-webkit-search-decoration {
   -webkit: none;

@@ -10,6 +10,7 @@ html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   transition: all 0.5s linear;
+  overflow-y: hidden;
 }
 
 .header_lamb_back {
@@ -543,8 +544,8 @@ beef tenderloin meat page
 
 .header_beef_tenderloin1 {
   min-height: 100vh;
-  background: url(../images/meat-products/tenderlion-beef.jpg)
-    center/cover no-repeat;
+  background: url(../images/meat-products/tenderlion-beef.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
   background-blend-mode: overlay;
 }
@@ -637,8 +638,8 @@ front-leg-of-lamb-halal-meat page
 */
 .front-leg-of-lamb-halal-meat {
   min-height: 100vh;
-  background: url(../images/meat-products/lamb-front-leg-meat.jpg)
-    center/cover no-repeat;
+  background: url(../images/meat-products/lamb-front-leg-meat.jpg) center/cover
+    no-repeat;
   transition: background 0.95s cubic-bezier(0.215, 0.61, 0.355, 1);
   background-blend-mode: overlay;
 }
