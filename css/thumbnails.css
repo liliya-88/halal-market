@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   transition: all 0.5s linear;
-  overflow-y: hidden;
+
 }
 
 .header_lamb_back {
@@ -39,8 +39,8 @@ html {
 
 .container_gallery {
   width: 100vw;
-  height: auto;
   overflow-x: hidden;
+  height: auto;
   background-color: #111111;
 }
 
